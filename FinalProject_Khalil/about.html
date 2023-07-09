@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PENSHOPPE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo-img.png" alt="logo"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart-icon.png" width="30px" height="30px"></a>
+                <img src="images/menu-icon.png" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <div class="hero-text">
+                        <h1 class="word1">ABOUT US</h1>
+                        <br>
+                        <br>
+                        <p class="sentence1">Known for its fresh and innovative take on casual wear, PENSHOPPE offers high quality apparel, innerwear, accessories, and fragrances from a unique design perspective for a variety of personalities. </p>
+                        <br>
+                        
+                        <p class="sentence1">An inclusive brand that has an age encompassing relevance and appeal. PENSHOPPE is positioned as the go-to brand for a variety of personalities looking to express themselves through fashion, at an attractive value that complements their lifestyle. </p>
+                        <br>
+                        
+                        <p class="sentence1">PENSHOPPE strengthens its universal appeal as a top Asian brand endorsed by international stars: NCT DREAM, Song Kang, and Han So Hee. And worn by Club Penshoppe PH stars: Julia Barretto, Darren, Cassy Legaspi, Marco Gumabao, Loisa Andalio, Ronnie Alonte, Mavy Legaspi, and Kyline Alcantara. 
+
+                        </p>
+                        <br>
+                        
+                        <p class="sentence1">PENSHOPPE has also been represented by the likes of Lisa Manoban of BLACKPINK, Cha Eun Woo of ASTRO, Zayn Malik, Millie Bobby Brown, Nam Joo Hyuk, Sandara Park, Ji Soo, Kendall Jenner, Bella Hadid, Jordan Barrett, Cara Delavigne, Gigi Jaded, Cameron Dallas, Lucky Blue Smith, Kaia Gerber, Zac Efron, One Direction, Ian Somerhalder, Nina Dobrev, Leighton Meester, Baifern, Mario Maurer, and Ed Westwick. <br> <br>With a modern vision to break barriers in the fashion scene, PENSHOPPE takes the stand as the authority on everyday fashion. </p>
+                        
+                    </div>
+                    </div>
+                    
+                <div class="col-2">
+                    <img class="hero-image-about" src="images/hero-img.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/logo-img.png">
+                    <p><br> Our mission is to sustainably propagate the enjoyment and advantages of fashion, deeply ingrained in Philippine culture, to as many people as possible.
+                    </p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Around the Web</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Threads</li>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Our Partners</h3>
+                    <ul>
+                        <li>Ayala Land</li>
+                        <li>SM Malls</li>
+                        <li>Robinsons</li>
+                        <li>Landers</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <p class="copyright">***The copyright for the mages and other information used on this project is owned by Penshoppe Inc. No copyright infringement is intended.</p>
+           <br>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+
+</html>

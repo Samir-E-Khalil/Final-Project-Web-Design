@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PENSHOPPE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-img.png" alt="logo" ></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart-icon.png" width="30px" height="30px"></a>
+            <img src="images/menu-icon.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- Cart items details -->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/latest-7.jpg">
+                        <div>
+                            
+                            <small>Price: ₱500.00</small>
+                            <hr>
+                            <br>
+                            <br>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₱500.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/latest-5.jpg">
+                        <div>
+                            
+                            <small>Price: ₱500.00</small>
+                            <hr>
+                            <br>
+                            <br>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₱500.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/latest-8.jpg">
+                        <div>
+                            
+                            <small>Price: ₱1500.00</small>
+                            <hr>
+                            <br>
+                            <br>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>₱1500.00</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>₱2500.00</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>₱200.00</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>₱2700.00 </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="images/logo-img.png">
+                    <p><br> Our mission is to sustainably propagate the enjoyment and advantages of fashion, deeply ingrained in Philippine culture, to as many people as possible.
+                    </p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Around the Web</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Threads</li>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Our Partners</h3>
+                    <ul>
+                        <li>Ayala Land</li>
+                        <li>SM Malls</li>
+                        <li>Robinsons</li>
+                        <li>Landers</li>
+                    </ul>
+                </div>
+            </div>
+           
+            <br>
+            <br>
+            <br>
+            <p class="copyright">***The copyright for the mages and other information used on this project is owned by Penshoppe Inc. No copyright infringement is intended.</p>
+           <br>
+        </div>
+    </div>
+
+
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
